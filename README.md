@@ -6,4 +6,4 @@ This is my personal Portfolio Website that holds all my recent and featured work
 
 After viewing my porfolio website if anyone would like to contact me there is a form below which allows anyone to fill it out and ask anything from a simple question to an actual project need.
 
-Contact: connor.herring@gmail.com
+Contact: connorcanuck96@gmail.com
