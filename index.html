@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, intial-scale-1.0">
+
+	<title>Connor Herring Designs</title>
+
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="images/portfolioicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!----main id="app"-->
+<!--Start Top Nav Bar-->
+
+<input id="toggle" type="checkbox"/>
+<label class="hamburger" for="toggle">
+  <div class="top"></div>
+  <div class="meat"></div>
+  <div class="bottom"></div>
+</label>
+
+<div class="nav">
+  <div class="nav-wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+	  <a href="mywork.html">My Work</a>
+      <a href="contact.html">Contact</a>
+		</nav>
+  </div>
+</div>
+<a href="index.html"><img class="portfoliologo" src="images/portfoliologo.png" height="60" width="60" alt="portfoliologo"></a>
+
+
+
+
+
+<!--Start Intro Spotlight-->
+
+
+<section id="maincontent">
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				<h1 class="main-title">Welcome,</h1>
+				<div id="text"></div>
+				
+				<div id="me">
+					
+						<p id="me1">{{ aboutme[0].Text }}</p>
+					</div>
+				<div class="box"><a href="#worksection">View work</a></div>
+			</div>
+		</div>
+</section>
+
+
+
+<!--Start About Me-->
+
+<section class="aboutme">
+	<div class="expanded row">
+		<div class="small-12 medium-4 large-4 columns">
+        	<div id="circle-img2">
+        	<img class="aboutmepic" src="images/aboutmepic2.png" alt="aboutmepic">
+      		</div>
+    	</div>
+
+	<div class="large-8 medium-8 small-12 columns">
+		<div id="aboutmeintro">
+			<h1 class="aboutmetitle">{{aboutme[1].Text}}</h1>
+				<p class="aboutmeinfo">{{aboutme[2].Text}}</p>
+					<p class="aboutmeinfo2">{{aboutme[3].Text}}</p>
+					<p class="aboutmeinfo3"><a href="#contactsection">Click here to contact me :)!</a></p>
+				</div>
+		</div>
+	</div>
+</section>
+
+
+<!--Fav things-->
+
+
+<section class="favorites">
+		<div class="expanded row">
+		<div class="large-12 small-12">
+			<h1 class="hidden">My favorite apps<a class="favoritessection"></a></h1>
+
+		</div>
+		</div>
+			<div class="row" id="favoritepics">
+				<div class="large-4 medium-4 small-12 columns">
+						<h1 class="gallerytitle2">{{aboutme[4].Text}}</h1>
+					<img src="images/moon.png" alt="moon">
+				
+				</div>
+					<div class="large-4 medium-4 small-12 columns">
+							<h1 class="gallerytitle2">{{aboutme[5].Text}}</h1>
+						<img src="images/moon2.png" alt="moon2">
+					</div>
+					<div class="large-4 medium-4 small-12 columns">
+							<h1 class="gallerytitle2">{{aboutme[6].Text}}</h1>
+						<img src="images/moon3.png" alt="moon3" >
+					</div>
+					<div class="large-7 large-centered medium-7 medium-centered small-12">
+							<h1 class="gallerytitle3">{{aboutme[7].Text}}</h1>
+					</div>
+			</div>
+			</section>
+
+
+
+
+ 
+ <!--My Work-->
+
+
+<section class="mywork">
+	<div class="expanded row">
+	<div class="large-12 small-12">
+		<h1 class="gallerytitle"><a class="worksection">{{aboutme[8].Text}}</a></h1>
+		<hr color="whitesmoke">
+	</div>
+	</div>
+		
+	<div class="expanded row">
+			<h2 class="hidden">Work Pics</h2>
+		<div id="workpics">
+
+
+			<div class="large-4 medium-4 small-12 columns">
+				<img src="images/work1.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+			</div>
+		
+		
+		<!--second pic-->
+			<div class="large-4 medium-4 small-12 columns">
+				<img src="images/work8.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+			</div>
+		
+			<!--third pic-->
+			<div class="large-4 medium-4 small-12 columns">
+				<img src="images/work9.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+			</div>
+		
+		
+		<!--4th pic-->
+			<div class="large-4 medium-4  small-12 columns">
+				<img src="images/work4.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork4">
+			</div>
+	
+			<!--5th pic-->
+			<div class="large-4 medium-4  small-12 columns">
+					<img src="images/work5.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork4">
+				</div>
+	
+			<!--Last pic-->
+			<div class="large-4 medium-4  small-12 columns">
+					<img src="images/work6.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork4">
+				</div>
+		</div>
+		
+		
+		
+		<div id="myModal" class="modal">
+			<div class="large-6 medium-8 medium-centered small-12 large-centered columns">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content" >
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="images/proj1.png" alt="prevwork5" >
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<video autoplay muted loop id="myVideo"> 
+						<source src="images/car.mp4" autoplay>
+						</video>
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<video autoplay muted loop controls id="myVideo"> 
+						<source src="images/mineshaftthing.mp4" autoplay>
+						</video>
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="images/proj4.png" alt="prevwork8">
+				</div>
+	
+				<div class="mySlides">
+						<div class="numbertext">5 / 6</div>
+						<img src="images/proj5.png" alt="prevwork8">
+					</div>
+					
+					<div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<video autoplay muted loop id="myVideo"> 
+							<source src="images/SoccerScene.mp4" autoplay>
+							</video>
+						
+						
+						</div>
+						
+				
+		
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<div class="caption-container">
+						<a href="https://github.com/canxck"><img class="github" src="images/github.png"></a>
+						<h3>Click on the icon to view the project!</h3>
+					<p id="caption"></p>
+				</div>
+			
+		
+				<div class="column">
+						
+					<img class="demo cursor" src="images/proj1.png"  onclick="currentSlide(1)" alt="Project 1">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/proj2.png"  onclick="currentSlide(2)" alt="Project 2">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/proj3.png" onclick="currentSlide(3)" alt="Project 3">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="images/proj4.png"  onclick="currentSlide(4)" alt="project 4">
+				</div>
+				<div class="column">
+						<img class="demo cursor" src="images/proj5.png"  onclick="currentSlide(5)" alt="project 5">
+					</div>
+					<div class="column">
+							<img class="demo cursor" src="images/work6.png"  onclick="currentSlide(6)" alt="project 6">
+						</div>
+		
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		
+		
+		
+</section>
+
+<section class="reeltitle">
+		<div class="row">
+			<div class="large-12 small-12">
+				<h1 class="gallerytitle"><a class="reelsection"></a>{{aboutme[9].Text}}</h1>
+				   <hr color="whitesmoke">
+			</div> 
+		</div>
+
+		<div class="large-10 large-offset-1 medium-10 medium-offset-1 small-12">
+			<video src="images/portfoli_reel.mp4" width="100%" controls></video>
+		</div>
+	
+
+
+	
+	
+	</section>
+
+
+
+
+<!--Contact Section-->
+
+<section class="contacttitle">
+	<div class="row">
+		<div class="large-12 small-12">
+			<h1 class="contactmetitle"><a class="contactsection"></a>{{aboutme[10].Text}}</h1>
+   			<hr color="whitesmoke">
+		</div> 
+	</div>
+</section>
+
+
+<section class="contact">
+	<form class="contact-form" action="contactform.php" method="POST">
+  <div class="row">
+   <div class="large-12 small-12">
+   </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <label><h1>{{aboutme[11].Text}}</h1>
+        <input type="email" name="mail" placeholder="Your email"/>
+      </label>    
+    </div>
+    <div class="large-6 medium-6 small-12 columns">
+      <label><h1>{{aboutme[12].Text}}</h1>
+        <input type="text" name="subject" placeholder="Message Subject" /> 
+      </label> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <label><h1>{{aboutme[13].Text}}</h1>
+        <textarea rows="7" name="message" placeholder="Your message"></textarea>
+      </label>
+    </div>
+  </div>
+  <div class="row submit">
+    <button type="submit" name="submit" form="form" value="Submit">{{aboutme[14].Text}}</button> 
+  </div>
+  </form>
+</section>
+	
+	
+	
+<!--Bottom Icons-->	
+	
+ <section class="bottomicons">
+ 	<div class="row">
+ 	<div class="large-12 small-12 columns">
+ 	<h1 class="iconstext">{{aboutme[15].Text}}</h1>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-google"></a>
+	</div>
+	 </div>
+ </section>
+
+ <!--Test Lightbox-->
+
+  
+
+
+
+<!--main-->
+
+	<script src="js/main.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="includes/connect.php"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
