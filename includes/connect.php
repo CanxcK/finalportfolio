@@ -1,8 +1,8 @@
 <?php 
-    $user = "conno407_connor";
-    $password = "Kittensrcool1";
+    $user = "root";
+    $password = "root";
     $host = "localhost";
-    $db = "conno407_portfolio";
+    $db = "db_portfolio";
 
     $conn = mysqli_connect($host, $user, $password, $db);
     if($conn->connect_error) {
@@ -10,7 +10,7 @@
         echo "connection didn't work...";
         // exit;
     }
-       // echo "FINALLY BIIITCH";
+       
        $myQuery = "SELECT * FROM tbl_content";
 
         $result = mysqli_query($conn, $myQuery);

@@ -1,7 +1,7 @@
 {
-  "name": "finalportfolio",
+  "name": "sass",
   "version": "1.0.0",
-  "description": "Repo for Final Project: Portfolio",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/CanxcK/finalportfolio.git"
   },
-  "author": "Me",
+  "author": "Connor Herring",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CanxcK/finalportfolio/issues"
   },
-  "homepage": "https://github.com/CanxcK/finalportfolio#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.2"
-  }
+  "homepage": "https://github.com/CanxcK/finalportfolio#readme"
 }

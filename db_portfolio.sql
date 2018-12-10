@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 05, 2018 at 06:30 PM
+-- Generation Time: Dec 10, 2018 at 03:36 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.8
 
@@ -45,7 +45,13 @@ INSERT INTO `tbl_content` (`ID`, `Text`) VALUES
 (7, 'Development'),
 (8, 'These are just a few of my favorite applications from each category in the world of multimedia design and development that I love to use!'),
 (9, 'My Work'),
-(10, 'Contact Me');
+(10, 'Reel'),
+(11, 'Contact me'),
+(12, 'Email'),
+(13, 'Subject'),
+(14, 'Message'),
+(15, 'Submit'),
+(16, 'Follow me here!');
 
 -- --------------------------------------------------------
 
@@ -91,7 +97,7 @@ ALTER TABLE `tbl_favorites`
 -- AUTO_INCREMENT for table `tbl_content`
 --
 ALTER TABLE `tbl_content`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tbl_favorites`
